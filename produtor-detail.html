@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Produtor - AgriPampa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2B6E3B",
+            secondary: "#4CAF50",
+            accent: "#FFC107",
+            dark: "#1E3A1F",
+            light: "#F5F5F5"
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-sans text-gray-800 relative">
+  <!-- Fundo -->
+  <div class="absolute inset-0 -z-10">
+    <div class="w-full h-full bg-[url('fundo.jpg')] bg-cover bg-center bg-fixed brightness-90 blur-sm"></div>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <img src="irga.png" class="h-12">
+        <img src="agripampa-logo.png" class="h-12">
+        <img src="unipampa.png" class="h-12">
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:text-primary font-medium">Início</a></li>
+          <li><a href="produtores.html" class="hover:text-primary font-medium">Produtores</a></li>
+          <li><a href="login.html" class="hover:text-primary font-medium">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-10">
+    <!-- Barra de progresso -->
+    <div class="mb-6">
+      <div class="flex justify-between mb-2 text-sm text-gray-700">
+        <span class="font-semibold text-white">1. Primeira Inspeção</span>
+        <span class="font-semibold text-white">2. Segunda Inspeção</span>
+        <span class="font-semibold text-white">3. Parecer</span>
+      </div>
+      <div class="w-full bg-gray-200 rounded-full h-2">
+        <div class="bg-primary h-2 rounded-full w-1/3"></div> <!-- Pode ser ajustado dinamicamente -->
+      </div>
+    </div>
+
+    <!-- Informações do produtor -->
+    <section class="bg-white p-6 rounded-xl shadow mb-8">
+        <div class="mb-6 flex items-center space-x-2 text-sm text-gray-600">
+      <a href="produtores.html" class="inline-flex items-center text-primary hover:underline">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        Voltar
+      </a>
+      <span class="text-gray-400">/</span>
+      <span class="text-primary hover:underline">12.345.678/0001-99</span>
+    </div>
+
+      <h2 class="text-xl font-bold text-primary mb-4">Informações do Produtor</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <p class="text-sm text-gray-600">Nome</p>
+          <p class="font-semibold">João da Silva</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-600">CPF</p>
+          <p class="font-semibold">123.456.789-00</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-600">Pessoa Jurídica</p>
+          <p class="font-semibold">Agro Silva LTDA</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-600">CNPJ</p>
+          <p class="font-semibold">12.345.678/0001-99</p>
+        </div>
+        <div class="md:col-span-2">
+          <p class="text-sm text-gray-600">Denominação do Empreendimento</p>
+          <p class="font-semibold">Fazenda Esperança</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-600">Município</p>
+          <p class="font-semibold">Dom Pedrito</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-600">E-mail</p>
+          <p class="font-semibold">joao@fazenda.com</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ações do técnico -->
+    <section class="bg-white p-6 rounded-xl shadow">
+      <h2 class="text-xl font-bold text-primary mb-4">Ações</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <a href="primeira-vistoria.html" class="block text-center bg-primary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Primeira Vistoria Técnica</a>
+        <a href="vistoria.html" class="block text-center bg-primary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Segunda Vistoria Técnica</a>
+        <a href="funcionarios.html" class="block text-center bg-primary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Funcionários</a>
+        <a href="implementos.html" class="block text-center bg-primary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Implementos Agrícolas</a>
+        <a href="insumos.html" class="block text-center bg-primary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Registro de Insumos</a>
+        <a href="insumos.html" class="block text-center bg-primary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Emitir parecer</a>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

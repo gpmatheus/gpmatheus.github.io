@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriPampa - Produtores</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2B6E3B",
+            secondary: "#4CAF50",
+            accent: "#FFC107",
+            dark: "#1E3A1F",
+            light: "#F5F5F5"
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-gray-800 relative">
+  <!-- Fundo com blur -->
+  <div class="absolute inset-0 -z-10">
+    <div class="w-full h-full bg-[url('fundo.jpg')] bg-cover bg-center bg-fixed brightness-90 blur-sm"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center flex-wrap gap-2">
+        <img src="irga.png" alt="IRGA Logo" class="h-12 md:h-16">
+        <img src="agripampa-logo.png" alt="AgriPampa Logo" class="h-12 md:h-16">
+        <img src="unipampa.png" alt="Unipampa Logo" class="h-12 md:h-16">
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6 items-center">
+          <li><a href="index.html" class="font-medium hover:text-primary transition">Início</a></li>
+          <li><a href="produtores.html" class="font-medium hover:text-primary transition">Produtores</a></li>
+          <li><a href="inscricoes.html" class="font-medium hover:text-primary transition">Técnicos</a></li>
+          <li><a href="login.html" class="font-medium hover:text-primary transition">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="max-w-6xl mx-auto px-4 py-12">
+    <section class="bg-white p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-bold text-primary mb-6">Lista de Produtores</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full table-auto">
+          <thead class="bg-primary text-white">
+            <tr>
+              <th class="px-6 py-3 text-left text-sm font-semibold">Nome</th>
+              <th class="px-6 py-3 text-left text-sm font-semibold">CPF</th>
+              <th class="px-6 py-3 text-left text-sm font-semibold">Propriedade</th>
+              <th class="px-6 py-3 text-right text-sm font-semibold">Ações</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200 bg-white">
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">João da Silva</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">123.456.789-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Fazenda Esperança</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Maria Oliveira</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">987.654.321-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Sítio Boa Vista</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <!-- Outros produtores podem ser inseridos aqui -->
+             <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">João da Silva</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">123.456.789-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Fazenda Esperança</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Maria Oliveira</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">987.654.321-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Sítio Boa Vista</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">João da Silva</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">123.456.789-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Fazenda Esperança</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Maria Oliveira</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">987.654.321-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Sítio Boa Vista</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">João da Silva</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">123.456.789-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Fazenda Esperança</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Maria Oliveira</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">987.654.321-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Sítio Boa Vista</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">João da Silva</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">123.456.789-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Fazenda Esperança</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Maria Oliveira</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">987.654.321-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Sítio Boa Vista</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">João da Silva</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">123.456.789-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Fazenda Esperança</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Maria Oliveira</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">987.654.321-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Sítio Boa Vista</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">João da Silva</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">123.456.789-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Fazenda Esperança</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Maria Oliveira</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">987.654.321-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Sítio Boa Vista</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">João da Silva</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">123.456.789-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Fazenda Esperança</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Maria Oliveira</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">987.654.321-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Sítio Boa Vista</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">João da Silva</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">123.456.789-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Fazenda Esperança</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Maria Oliveira</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">987.654.321-00</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Sítio Boa Vista</td>
+              <td class="px-6 py-4 text-right">
+                <a href="produtor-detail.html" class="text-sm text-primary hover:underline">Ver detalhes</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

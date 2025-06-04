@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriPampa - Vistoria Técnica</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2B6E3B",
+            secondary: "#4CAF50",
+            accent: "#FFC107",
+            dark: "#1E3A1F",
+            light: "#F5F5F5"
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-sans text-gray-800 relative">
+    <div class="absolute inset-0 -z-10">
+      <div class="w-full h-full bg-[url('fundo.jpg')] bg-cover bg-center bg-fixed brightness-75 blur-sm"></div>
+    </div>
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center flex-wrap gap-2">
+        <!-- <img src="agripampa-logo.png" alt="AgriPampa Logo" class="h-10 mr-3">
+        <div>
+          <h1 class="text-xl font-bold text-primary">AgriPampa</h1>
+          <p class="text-xs text-gray-600">Vistorias Técnicas</p>
+        </div> -->
+        <img src="irga.png" alt="IRGA Logo" class="h-12 md:h-16">
+        <img src="agripampa-logo.png" alt="AgriPampa Logo" class="h-12 md:h-16">
+        <img src="unipampa.png" alt="Unipampa Logo" class="h-12 md:h-16">
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="font-medium hover:text-primary transition">Início</a></li>
+          <li><a href="produtores.html" class="font-medium hover:text-primary transition">Produtores</a></li>
+          <li><a href="inscricoes.html" class="font-medium hover:text-primary transition">Técnicos</a></li>
+          <li><a href="login.html" class="font-medium hover:text-primary transition">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <section id="anexo1" class="bg-white p-6 rounded-xl shadow mb-12">
+      <h2 class="text-2xl font-bold text-primary mb-6">Cadastro do Agricultor</h2>
+      <form class="grid md:grid-cols-2 gap-6">
+        <div class="md:col-span-2"><h3 class="font-semibold text-lg mb-2">1.1 Informações para Pessoa Física</h3></div>
+        <div><label class="block text-sm font-medium mb-1">Nome:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+        <div><label class="block text-sm font-medium mb-1">CPF:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+
+        <div class="md:col-span-2 mt-6"><h3 class="font-semibold text-lg mb-2">1.2 Informações para Pessoa Jurídica</h3></div>
+        <div><label class="block text-sm font-medium mb-1">Nome:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+        <div><label class="block text-sm font-medium mb-1">CNPJ:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+
+        <div class="md:col-span-2 mt-6"><h3 class="font-semibold text-lg mb-2">1.3 Empreendimento</h3></div>
+        <div class="md:col-span-2"><label class="block text-sm font-medium mb-1">Denominação:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+        <div><label class="block text-sm font-medium mb-1">Município:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+        <div><label class="block text-sm font-medium mb-1">E-mail:</label><input type="email" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+        <div><label class="block text-sm font-medium mb-1">Inscrição no IRGA:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+        <div><label class="block text-sm font-medium mb-1">Coordenada geográfica:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+        <div><label class="block text-sm font-medium mb-1">Nº da Licença de Operação da lavoura:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+        <!-- <div><label class="block text-sm font-medium mb-1">Validade da LO da lavoura:</label><input type="date" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div> -->
+
+        <div class="relative max-w-sm">
+        <label class="block text-sm font-medium mb-1">
+            Validade da LO da lavoura:
+        </label>
+        <input 
+            datepicker 
+            id="default-datepicker" 
+            type="text" 
+            class="bg-white border border-gray-300 text-gray-800 text-sm rounded-xl focus:outline-none focus:ring-2 focus:ring-primary block w-full ps-10 p-3 shadow-sm" 
+            placeholder="Selecione a data">
+        </div>
+
+        <div><label class="block text-sm font-medium mb-1">Nº da LO da unidade de secagem e armazenamento:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+        <!-- <div><label class="block text-sm font-medium mb-1">Validade da LO da unidade de secagem e armazenamento:</label><input type="date" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div> -->
+         <div class="relative max-w-sm">
+        <label class="block text-sm font-medium mb-1">
+            Validade da LO da unidade de secagem e armazenamento:
+        </label>
+        <input 
+            datepicker 
+            id="default-datepicker" 
+            type="text" 
+            class="bg-white border border-gray-300 text-gray-800 text-sm rounded-xl focus:outline-none focus:ring-2 focus:ring-primary block w-full ps-10 p-3 shadow-sm" 
+            placeholder="Selecione a data">
+        </div>
+        <div class="md:col-span-2"><label class="block text-sm font-medium mb-1">Número do CAR:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+
+        <div class="md:col-span-2"><label class="block text-sm font-medium mb-1">Local e data:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+        <div><label class="block text-sm font-medium mb-1">Nome do Produtor ou do Gerente responsável:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+        <div><label class="block text-sm font-medium mb-1">Nome e contato do Responsável Técnico:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+        <div class="md:col-span-2"><label class="block text-sm font-medium mb-1">Nº de Registro no CREA/RS:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" /></div>
+        <div class="md:col-span-2"><label class="block text-sm font-medium mb-1">Assinatura do produtor ou do Gerente responsável:</label><input type="text" class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Assinatura digital ou campo reservado" /></div>
+
+        <!-- Seção de Aceite de Termos -->
+<div class="bg-white p-6 rounded-xl shadow mb-6">
+  <h3 class="text-lg font-semibold text-primary mb-4">Aceite de Termos e Serviços</h3>
+  
+  <div class="flex items-start">
+    <div class="flex items-center h-5">
+      <input id="terms-checkbox" type="checkbox" class="w-4 h-4 border border-gray-300 rounded focus:ring-primary focus:ring-2 text-primary">
+    </div>
+    <label for="terms-checkbox" class="ms-2 text-sm font-medium text-gray-700">
+      Eu li e aceito os <button type="button" onclick="openTermsModal()" class="text-primary hover:underline focus:outline-none">Termos e Serviços</button>
+    </label>
+  </div>
+</div>
+
+<!-- Modal de Termos e Serviços -->
+<div id="terms-modal" class="fixed inset-0 z-50 hidden overflow-y-auto">
+  <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+    <!-- Fundo escuro -->
+    <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+      <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+    </div>
+    
+    <!-- Conteúdo do Modal -->
+    <div class="inline-block align-bottom bg-white rounded-xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+      <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+        <div class="sm:flex sm:items-start">
+          <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
+            <h3 class="text-lg leading-6 font-bold text-primary mb-4">Termos e Serviços</h3>
+            <div class="mt-2 max-h-96 overflow-y-auto">
+              <div class="text-sm text-gray-700 space-y-4">
+                <h4 class="font-semibold">1. Definições</h4>
+                <p>Boas práticas agrícolas na propriedade e infraestrutura rural: respeita as Áreas de Preservação Permanente (APP); possui rampa ou pista de lavagem para veículos, máquinas e implementos agrícolas; mantém tanques de combustível fixos ou móveis com estruturas de contenção; dispõe de pista para lavagem, abastecimento e lubrificação; realiza a tríplice lavagem de embalagens de defensivos agrícolas; destina adequadamente as embalagens de lubrificantes e defensivos agrícolas; utiliza defensivos agrícolas registrados e recomendados para a cultura do arroz; adota Receituário Agronômico e utiliza os produtos sob orientação de técnicos habilitados; armazena defensivos agrícolas e embalagens vazias de maneira adequada para evitar a contaminação ambiental; os aplicadores usam Equipamentos de Proteção Individual na aplicação de defensivos agrícolas; possui tela protetora na canalização das bombas de irrigação; e capta água de diferentes fontes em conformidade com a legislação aplicável. Boas práticas agrícolas no manejo da cultura do arroz irrigado: realiza a adubação de acordo com a análise de solo e recomendações para expectativa de produtividade desejada; utiliza sementes certificadas devidamente comprovadas; semeia dentro do período recomendado de acordo com o zoneamento agrícola; não realiza drenagem da lavoura após o preparo do solo em semeadura no sistema de cultivo pré-germinado; não efetua drenagem após a aplicação de qualquer defensivo agrícola em qualquer sistema de cultivo por no mínimo 30 dias; suspende a irrigação 15 dias após o florescimento pleno para evitar a drenagem durante a colheita; respeita o período de carência dos defensivos agrícolas aplicados. Adequação à legislação ambiental e trabalhista: por fim, declaramos que o empreendimento não recebeu nenhuma infração ambiental ao longo de 2023, e que adota medidas para se adequar às normas de Segurança do Trabalhador (NR 31). Em caso de serviços terceirizados, anexamos documentos dos prestadores de serviço, declarando estar em conformidade com as normas mencionadas nas atividades contratadas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+        <button type="button" onclick="closeTermsModal()" class="w-full inline-flex justify-center rounded-xl border border-transparent shadow-sm px-4 py-2 bg-primary text-base font-medium text-white hover:bg-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary sm:ml-3 sm:w-auto sm:text-sm">
+          Entendi e Concordo
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Funções para abrir/fechar o modal
+  function openTermsModal() {
+    document.getElementById('terms-modal').classList.remove('hidden');
+    document.body.classList.add('overflow-hidden');
+  }
+  
+  function closeTermsModal() {
+    document.getElementById('terms-modal').classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
+    document.getElementById('terms-checkbox').checked = true;
+  }
+</script>
+      </form>
+      <button class="mt-6 bg-secondary text-light font-bold px-6 py-3 rounded-lg hover:bg-green-400">Registrar</button>
+    </section>
+  </main>
+</body>
+
+</html>

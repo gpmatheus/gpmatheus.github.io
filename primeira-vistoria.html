@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AgriPampa - Vistoria Técnica (Anexo 7)</title>
+  <title>AgriPampa - Vistoria Técnica</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -39,109 +39,120 @@
         <img src="unipampa.png" alt="Unipampa Logo" class="h-12 md:h-16">
       </div>
       <nav class="hidden md:block">
-        <ul class="flex space-x-6 items-center">
-          <li><a href="index.html" class="font-medium hover:text-primary transition">Início</a></li>
-          <li><a href="produtores.html" class="font-medium hover:text-primary transition">Produtores</a></li>
-          <li><a href="inscricoes.html" class="font-medium hover:text-primary transition">Inscrições</a></li>
-          <li>
-            <a href="#perfil" class="text-gray-700 hover:text-primary transition">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 20.25a8.25 8.25 0 0115 0" />
-              </svg>
-            </a>
-          </li>
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:text-primary font-medium">Início</a></li>
+          <li><a href="produtores.html" class="hover:text-primary font-medium">Produtores</a></li>
+          <li><a href="login.html" class="hover:text-primary font-medium">Login</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="max-w-5xl mx-auto px-4 py-12">
-    <section class="bg-white p-6 rounded-xl shadow">
-      <!-- Breadcrumb e botão voltar -->
-    <div class="mb-6 flex items-center space-x-2 text-sm text-gray-600">
-      <a href="produtores.html" class="inline-flex items-center text-primary hover:underline">
+    <!-- Seção de formulário adicional -->
+    <section class="bg-white p-6 rounded-xl shadow mb-12">
+      <div class="mb-6 flex items-center space-x-2 text-sm text-gray-600">
+      <a href="produtor-detail.html" class="inline-flex items-center text-primary hover:underline">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
         </svg>
         Voltar
       </a>
       <span class="text-gray-400">/</span>
-      <a href="produtor-cnpj.html" class="text-primary hover:underline">12.345.678/0001-99</a>
-      <span class="text-gray-400">/</span>
-      <span class="text-gray-800 font-semibold"><h2>Ficha de Vistoria Técnica</h2></span>
+      <span class="text-primary hover:underline">12.345.678/0001-99</span>
     </div>
+    
+      <h2 class="text-2xl font-bold text-primary mb-6">Primeira Vistoria</h2>
+      <form class="grid md:grid-cols-2 gap-6">
+        <div class="md:col-span-2">
+          <label class="block text-sm font-medium mb-1">Área semeada de arroz (ha)</label>
+          <input type="number" value="180" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
+        </div>
 
-      <!-- <h2 class="text-2xl font-bold text-primary mb-6">Ficha de Vistoria Técnica</h2> -->
-      <div class="grid md:grid-cols-2 gap-6 mb-8">
-  <div>
-    <p class="text-sm font-medium text-gray-600">Nome da Pessoa Física</p>
-    <p class="text-lg font-semibold text-gray-900">João da Silva</p>
-  </div>
-  <div>
-    <p class="text-sm font-medium text-gray-600">CPF</p>
-    <p class="text-lg font-semibold text-gray-900">123.456.789-00</p>
-  </div>
-  <div>
-    <p class="text-sm font-medium text-gray-600">Nome da Pessoa Jurídica</p>
-    <p class="text-lg font-semibold text-gray-900">Agro Silva LTDA</p>
-  </div>
-  <div>
-    <p class="text-sm font-medium text-gray-600">CNPJ</p>
-    <p class="text-lg font-semibold text-gray-900">12.345.678/0001-99</p>
-  </div>
-  <div class="md:col-span-2">
-    <p class="text-sm font-medium text-gray-600">Denominação do Empreendimento</p>
-    <p class="text-lg font-semibold text-gray-900">Fazenda Esperança</p>
-  </div>
-  <div>
-    <p class="text-sm font-medium text-gray-600">Município</p>
-    <p class="text-lg font-semibold text-gray-900">Dom Pedrito</p>
-  </div>
-  <div>
-    <p class="text-sm font-medium text-gray-600">E-mail</p>
-    <p class="text-lg font-semibold text-gray-900">joao@fazenda.com</p>
-  </div>
-  <div>
-    <p class="text-sm font-medium text-gray-600">Inscrição no IRGA</p>
-    <p class="text-lg font-semibold text-gray-900">IRGA-12345</p>
-  </div>
-  <div>
-    <p class="text-sm font-medium text-gray-600">Coordenada Geográfica</p>
-    <p class="text-lg font-semibold text-gray-900">-30.9644, -54.6789</p>
-  </div>
-</div>
-<form class="grid md:grid-cols-2 gap-6">
+        <div class="md:col-span-2 mt-4">
+          <h3 class="font-semibold text-lg text-gray-700 mb-2">Preparo da área</h3>
+        </div>
         <div>
-          <label class="block text-sm font-medium mb-1">Data da Vistoria</label>
+          <label class="block text-sm font-medium mb-1">% de área preparada até 31 de março</label>
+          <input type="number" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">% de área preparada entre 1º de abril e 30 de junho</label>
+          <input type="number" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
+        </div>
+        <div class="md:col-span-2">
+          <label class="block text-sm font-medium mb-1">% de área preparada depois de 1º de julho</label>
+          <input type="number" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
+        </div>
+
+        <div class="md:col-span-2 mt-4">
+          <h3 class="font-semibold text-lg text-gray-700 mb-2">Diversificação</h3>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">% após rotação de culturas</label>
+          <input type="number" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">% após sucessão de culturas</label>
+          <input type="number" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
+        </div>
+        <div class="md:col-span-2">
+          <label class="block text-sm font-medium mb-1">% com ILP</label>
+          <input type="number" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
+        </div>
+
+        <div class="md:col-span-2 mt-4">
+          <h3 class="font-semibold text-lg text-gray-700 mb-2">Cultivar Principal</h3>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Nome da cultivar principal</label>
+          <input type="text" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">% de área da cultivar principal</label>
+          <input type="number" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Data média da semeadura</label>
           <input type="date" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
         </div>
-        <div class="md:col-span-2">
-          <label class="block text-sm font-medium mb-1">Descrição das Atividades Realizadas</label>
-          <textarea rows="4" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm"></textarea>
+        <div>
+          <label class="block text-sm font-medium mb-1">% de área semeada na época preferencial *</label>
+          <input type="number" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
         </div>
+
         <div class="md:col-span-2">
-          <label class="block text-sm font-medium mb-1">Observações Técnicas</label>
-          <textarea rows="4" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm"></textarea>
+          <label class="block text-sm font-medium mb-1">Usa sementes certificadas? *</label>
+          <select class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm">
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
         </div>
-        <div class="md:col-span-2">
-          <label class="block text-sm font-medium mb-1">Responsável pela Vistoria</label>
-          <input type="text" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
+
+        <div class="md:col-span-2 mt-4">
+          <h3 class="font-semibold text-lg text-gray-700 mb-2">Sistemas de Cultivo (%)</h3>
         </div>
         <div>
-          <label class="block text-sm font-medium mb-1">CREA/Registro</label>
-          <input type="text" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
+          <label class="block text-sm font-medium mb-1">Pré Germinado</label>
+          <input type="number" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
         </div>
         <div>
-          <label class="block text-sm font-medium mb-1">Contato</label>
-          <input type="text" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
+          <label class="block text-sm font-medium mb-1">Convencional</label>
+          <input type="number" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Plantio Direto</label>
+          <input type="number" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Cultivo Mínimo</label>
+          <input type="number" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
         </div>
         <div class="md:col-span-2">
-          <label class="block text-sm font-medium mb-1">Assinatura do Técnico</label>
-          <input type="text" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" placeholder="Campo reservado para assinatura" />
+          <label class="block text-sm font-medium mb-1">Tempo de adoção do sistema predominante</label>
+          <input type="text" class="w-full border border-gray-300 rounded-xl px-4 py-3 shadow-sm" />
         </div>
       </form>
-      <button class="mt-6 bg-secondary text-white font-bold px-6 py-3 rounded-lg hover:bg-green-600">Salvar Vistoria</button>
     </section>
   </main>
 </body>

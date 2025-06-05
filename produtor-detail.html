@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Painel do Produtor - AgriPampa</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
   <script>
     tailwind.config = {
       theme: {
@@ -36,9 +38,9 @@
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center gap-2">
-        <img src="irga.png" class="h-12">
-        <img src="agripampa-logo.png" class="h-12">
-        <img src="unipampa.png" class="h-12">
+        <img src="irga.png" class="h-12 md:h-16">
+        <img src="agripampa-logo.png" class="h-12 md:h-16">
+        <img src="unipampa.png" class="h-12 md:h-16">
       </div>
       <nav class="hidden md:block">
         <ul class="flex space-x-6">
@@ -113,12 +115,26 @@
     <section class="bg-white p-6 rounded-xl shadow">
       <h2 class="text-xl font-bold text-primary mb-4">Ações</h2>
       <div class="grid md:grid-cols-2 gap-4">
-        <a href="primeira-vistoria.html" class="block text-center bg-primary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Primeira Vistoria Técnica</a>
-        <a href="vistoria.html" class="block text-center bg-primary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Segunda Vistoria Técnica</a>
-        <a href="funcionarios.html" class="block text-center bg-primary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Funcionários</a>
-        <a href="implementos.html" class="block text-center bg-primary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Implementos Agrícolas</a>
-        <a href="insumos.html" class="block text-center bg-primary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Registro de Insumos</a>
-        <a href="insumos.html" class="block text-center bg-primary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Emitir parecer</a>
+        <a href="primeira-vistoria.html"
+          class="flex items-center justify-center gap-2 bg-primary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">
+          Primeira Vistoria Técnica
+          <i class="fas fa-check"></i>
+        </a>
+         <a href="#"
+          class="flex items-center justify-center gap-2 bg-accent text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">
+          Segunda Vistoria Técnica
+          <i class="fas fa-clock"></i>
+        </a>
+        <a href="#" class="block text-center bg-secondary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Funcionários</a>
+        <a href="#" class="block text-center bg-secondary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Higiene</a>
+        <a href="#" class="block text-center bg-secondary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Legislação</a>
+        <a href="#" class="block text-center bg-secondary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Implementos Agrícolas</a>
+        <a href="#" class="block text-center bg-secondary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Registro de Insumos (fertilizantes)</a>
+        <a href="#" class="block text-center bg-secondary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Registro de Insumos (defensivos)</a>
+        <a href="#" class="block text-center bg-secondary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Uso da Água</a>
+        <a href="#" class="block text-center bg-secondary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Manejo de Pragas</a>
+        <a href="#" class="block text-center bg-secondary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Rastreabilidade</a>
+        <a href="#" class="block text-center bg-secondary text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700">Emitir Parecer</a>
       </div>
     </section>
   </main>
